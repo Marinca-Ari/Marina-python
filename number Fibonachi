@@ -1,0 +1,10 @@
+n=int(input("Въведете n: "))
+a, b = 1,1
+first = True
+while first or a <= n:
+    if not first:
+      print(",", end=" ")
+    print(a, end="")
+    first = False
+    a, b = b, a + b
+print()
